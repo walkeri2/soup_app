@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Soup App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+    <h1>Soup Order</h1
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="type" class="primary">Type</label>
+          <select id="type">
+            <option value="" disabled selected></option>
+            <option value="lentil">Lentil</option>
+            <option value="parsnip">Parsnip</option>
+            <option value="tomato">Tomato</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="size" class="primary">Size</label>
+          <select id="size">
+            <option value="" disabled selected></option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="bread" class="primary">Bread</label>
+          <select id="bread">
+            <option value="" disabled selected></option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="comment" class="primary">Comment</label>
+          <input type="text" id="comment"/>
+        </div>
+
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Soup List</h1>
+    <ul id="soup-list"></ul>
+    
+  </body>
+</html>
